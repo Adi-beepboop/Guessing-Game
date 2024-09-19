@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@400;700&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Playpen Sans", sans-serif;
+  background: linear-gradient(to right, #51ff00, #0e80e4); /* Gradient*/
+  color: #333;
+}
+
+.welcome-page-title {
+  text-align: center;
+  padding: 50px;
+}
+
+h1 {
+  font-family: "Playpen Sans", sans-serif;
+  color: #884747;
+  font-weight: normal;
+}
+
+.subheading {
+  font-family: "Playpen Sans", sans-serif;
+  color: #a55e5eb2;
+  font-weight: 400;
+  text-align: center;
+  font-size: 1.5em;
+}
+.email-to {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 10px;
+  font-size: 18px;
+  padding: 12px 24px;
+  background-color: #b33c3c;
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  display: block;
+  width: fit-content;
+  text-align: center;
+  cursor: pointer;
+}
+
+.email-to:hover {
+  background-color: #922b2b;
+  transform: translateX(-50%) scale(1.05);
+  text-decoration: none;
+}
+
+.email-to:active {
+  background-color: #731f1f;
+  transform: translateX(-50%) scale(0.98);
+}
+/*Yo now this button looks sike*/
