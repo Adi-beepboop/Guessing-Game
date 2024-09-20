@@ -20,7 +20,7 @@ function promptGuess() {
           if (willQuit) {
             // User confirmed to quit the game
             swal("Game Over!", "You have quit the game.", "info").then(() => {
-              window.location.href = "guessing_game.html"; // Redirect to home screen
+              window.location.href = "index.html"; // Redirect to home screen
             });
           } else {
             // User chose to continue, re-prompt for the guess
@@ -54,7 +54,7 @@ function promptGuess() {
               innerHTML: `<a href="mailto:adinath.ka01@gmail.com">Email us suggestions to improve this game</a>`,
             },
           },
-        }).then(() => (window.location.href = "guessing_game.html")); // Redirect back to home after win
+        }).then(() => (window.location.href = "index.html")); // Redirect back to home after win
       } else {
         // Wrong guess, decrement attempts
         attempts--;
@@ -71,7 +71,7 @@ function promptGuess() {
             "Game Over!",
             `No more attempts left. The correct number was ${randomNumber}.`,
             "error"
-          ).then(() => (window.location.href = "guessing_game.html")); // Redirect back to home after game over
+          ).then(() => (window.location.href = "index.html")); // Redirect back to home after game over
         }
       }
     });
