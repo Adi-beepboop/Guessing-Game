@@ -22,7 +22,7 @@ function promptGuess() {
             // User confirmed to quit the game
             swal("Game Over!", "You have quit the game.", "info").then(
               () => {
-                window.location.href = "guessing_game.html"; // Redirect to home screen
+                window.location.href = "index.html"; // Redirect to home screen
               }
             );
           } else {
@@ -58,7 +58,7 @@ function promptGuess() {
                           <a href="mailto:adinath.ka01@gmail.com">Email us a screenshot of you winning God Level</a>`,
             },
           },
-        }).then(() => (window.location.href = "guessing_game.html"));
+        }).then(() => (window.location.href = "index.html"));
       } else {
         // Wrong guess, decrement attempts
         attempts--;
@@ -75,7 +75,7 @@ function promptGuess() {
             "Game Over!",
             `No more attempts left. The correct number was ${randomNumber}.`,
             "error"
-          ).then(() => (window.location.href = "guessing_game.html")); // Redirect back to home after game over
+          ).then(() => (window.location.href = "index.html")); // Redirect back to home after game over
         }
       }
     });
